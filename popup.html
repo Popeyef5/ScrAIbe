@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScrAIbe Settings</title>
+    <style>
+      body {
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      input {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        font-size: 14px;
+      }
+      button {
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+        background-color: #0084ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>API Key:</p>
+    <input id="api-key-input" type="text" />
+    <button id="save-button">Save</button>
+    <p id="status"></p>
+  </body>
+  <script src="popup.js"></script>
+</html>

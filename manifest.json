@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ScrAIbe",
+  "description": "A Chrome extension that enhances Gmail to enable automatic responses using ChatGPT",
+  "version": "1.0.0",
+
+  "permissions": ["storage", "https://api.openai.com/v1/*"],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "ScrAIbe - OpenAI API Key",
+    "default_popup": "popup.html"
+  }
+}
