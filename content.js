@@ -39,8 +39,6 @@ var observer = new MutationObserver(function (mutations) {
             "\n\nWrite a response email paraphrasing the following:\n" +
             composeWindow.innerText;
 
-          console.log(prompt);
-
           // Clear the text content of the compose window
           composeWindow.innerText = "\n";
         }
@@ -77,7 +75,6 @@ var observer = new MutationObserver(function (mutations) {
     }
 
     // Stop observing the page
-    console.log("disconnecting");
     observer.disconnect();
   }
 });

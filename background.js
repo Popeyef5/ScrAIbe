@@ -2,10 +2,7 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   // Check if the message is a request to generate text
   if (message.type === "generate-text") {
-    generateText(message.prompt).then((response) => {
-      sendResponse(response);
-      console.log(response);
-    });
+    generateText(message.prompt).then((response) => sendResponse(response));
     return true;
   }
 });
@@ -34,12 +31,10 @@ async function generateText(prompt) {
       },
       body: JSON.stringify(requestBody),
     });
-    console.log(response);
     // Check if the request was successful
     if (response.ok) {
       // Parse the response body
       const responseBody = await response.json();
-      console.log(responseBody);
       // Return the generated text
       return {
         type: "text-generated",
