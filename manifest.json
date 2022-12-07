@@ -4,7 +4,7 @@
   "description": "A Chrome extension that enhances Gmail to enable automatic responses using ChatGPT",
   "version": "0.0.1",
 
-  "permissions": ["storage", "https://api.openai.com/v1/*"],
+  "permissions": ["storage"],
 
   "background": {
     "service_worker": "background.js"
