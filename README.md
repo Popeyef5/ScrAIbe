@@ -10,7 +10,7 @@ ScrAIbe is a Chrome extension that helps you write better emails using the power
 
 ## Installation
 
-1. Download the ScrAIbe extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/scraibe/abc123def456ghi789).
+1. Download the ScrAIbe extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/nbdpcanokjfhkogegcnpfkbfggbfnhfa).
 2. Insert your OpenAI API key in the extension's settings page.
 3. Open Gmail and click on the 'Compose' button to start a new email.
 4. Click on the 'Use ChatGPT' button next to the 'Send' button to generate a response.
